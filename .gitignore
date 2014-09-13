@@ -1,5 +1,9 @@
-# Visual Studio ignores
+#==== VISUAL STUDIO IGNORES ====
+#Property files
 *.suo
 *.user
+#Binary directories
 /*/*/bin
 /*/*/obj
+#Nuget packages
+/*/packages
