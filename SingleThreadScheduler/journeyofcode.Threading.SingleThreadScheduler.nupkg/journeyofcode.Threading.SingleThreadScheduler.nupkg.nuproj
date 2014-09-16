@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>372d83ff-f00e-450d-8055-0fc39fd944de</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(MSBuildExtensionsPath)\NuProj\</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>journeyofcode.Threading.SingleThreadScheduler.nupkg</Id>
+    <Version>1.0.1</Version>
+    <Title>SingleThreadScheduler</Title>
+    <Authors>Matthias Welz, http://www.journeyofcode.com/</Authors>
+    <Owners>Matthias Welz, http://www.journeyofcode.com/</Owners>
+    <Summary>
+    </Summary>
+    <Description>Provides the SingleThreadScheduler introduced in http://www.journeyofcode.com/custom-taskscheduler-sta-threads/</Description>
+    <ReleaseNotes>Release Notes</ReleaseNotes>
+    <ProjectUrl>https://github.com/matthiaswelz/journeyofcode/tree/master/SingleThreadScheduler</ProjectUrl>
+    <LicenseUrl>https://raw.githubusercontent.com/matthiaswelz/journeyofcode/master/LICENSE</LicenseUrl>
+    <Copyright>Copyright © 2014 Matthias Welz, http://www.journeyofcode.com/</Copyright>
+    <Tags>
+    </Tags>
+    <RequireLicenseAcceptance>true</RequireLicenseAcceptance>
+    <EmbedSourceFiles>true</EmbedSourceFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SingleThreadScheduler\SingleThreadScheduler.csproj" />
+  </ItemGroup>
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>

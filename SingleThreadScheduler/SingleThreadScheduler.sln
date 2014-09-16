@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleThreadScheduler", "Si
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleThreadScheduler.Tests", "SingleThreadScheduler.Tests\SingleThreadScheduler.Tests.csproj", "{517B1374-EB1D-4CCB-8E83-F1560B049F3C}"
 EndProject
+Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "journeyofcode.Threading.SingleThreadScheduler.nupkg", "journeyofcode.Threading.SingleThreadScheduler.nupkg\journeyofcode.Threading.SingleThreadScheduler.nupkg.nuproj", "{372D83FF-F00E-450D-8055-0FC39FD944DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{517B1374-EB1D-4CCB-8E83-F1560B049F3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{517B1374-EB1D-4CCB-8E83-F1560B049F3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{517B1374-EB1D-4CCB-8E83-F1560B049F3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{372D83FF-F00E-450D-8055-0FC39FD944DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372D83FF-F00E-450D-8055-0FC39FD944DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372D83FF-F00E-450D-8055-0FC39FD944DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372D83FF-F00E-450D-8055-0FC39FD944DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
