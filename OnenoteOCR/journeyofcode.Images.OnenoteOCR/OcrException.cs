@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace OnenoteOCR
+namespace journeyofcode.Images.OnenoteOCR
 {
     [Serializable]
     public class OcrException

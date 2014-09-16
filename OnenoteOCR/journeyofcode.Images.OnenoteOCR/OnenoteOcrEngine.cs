@@ -7,7 +7,7 @@ using System.Threading;
 using System.Xml.Linq;
 using Microsoft.Office.Interop.OneNote;
 
-namespace OnenoteOCR
+namespace journeyofcode.Images.OnenoteOCR
 {
     public sealed class OnenoteOcrEngine
         : IOcrEngine, IDisposable
@@ -19,13 +19,13 @@ namespace OnenoteOCR
 
         public OnenoteOcrEngine()
         {
-            var app = Try(() => new Application(), e => new OcrException("Error initializing OneNote", e));
-            this._page = Try(() => new OnenotePage(app), e => new OcrException("Error initializing page.", e));
+            var app = this.Try(() => new Application(), e => new OcrException("Error initializing OneNote", e));
+            this._page = this.Try(() => new OnenotePage(app), e => new OcrException("Error initializing page.", e));
         }
 
         public string Recognize(Image image)
         {
-            return Try(() => RecognizeIntern(image), e => new OcrException("Error during recognition", e));
+            return this.Try(() => this.RecognizeIntern(image), e => new OcrException("Error during recognition", e));
         }
 
         private string RecognizeIntern(Image image)

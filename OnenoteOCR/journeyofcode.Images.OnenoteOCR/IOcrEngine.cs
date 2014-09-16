@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Linq;
 using System.Drawing;
+using System.Linq;
 
-namespace OnenoteOCR
+namespace journeyofcode.Images.OnenoteOCR
 {
     public interface IOcrEngine
     {

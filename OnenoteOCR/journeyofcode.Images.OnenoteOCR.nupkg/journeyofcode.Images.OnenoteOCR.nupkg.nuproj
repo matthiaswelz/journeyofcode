@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\journeyofcode.Images.OnenoteOCR\journeyofcode.Images.OnenoteOCR.csproj" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>b0287f34-8a06-4c24-a1d7-f4a7d57d6b4b</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(MSBuildExtensionsPath)\NuProj\</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>journeyofcode.Images.OnenoteOCR.nupkg</Id>
+    <Version>1.0.0</Version>
+    <Title>OnenoteOCR</Title>
+    <Authors>Matthias Welz, http://www.journeyofcode.com/</Authors>
+    <Owners>Matthias Welz, http://www.journeyofcode.com/</Owners>
+    <Summary>
+    </Summary>
+    <Description>Allows utilizing the OCR engine of OneNote.</Description>
+    <ReleaseNotes>
+    </ReleaseNotes>
+    <ProjectUrl>http://www.journeyofcode.com/free-easy-ocr-c-using-onenote/</ProjectUrl>
+    <LicenseUrl>https://raw.githubusercontent.com/matthiaswelz/journeyofcode/master/LICENSE</LicenseUrl>
+    <Copyright>Copyright © 2014 Matthias Welz, http://www.journeyofcode.com/</Copyright>
+    <Tags>
+    </Tags>
+    <RequireLicenseAcceptance>false</RequireLicenseAcceptance>
+    <EmbedSourceFiles>true</EmbedSourceFiles>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>

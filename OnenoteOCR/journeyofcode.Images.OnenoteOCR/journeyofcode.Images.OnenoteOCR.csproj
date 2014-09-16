@@ -7,8 +7,8 @@
     <ProjectGuid>{51FE127E-FF4C-445D-80D8-DB4B414953E3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OnenoteOCR</RootNamespace>
-    <AssemblyName>OnenoteOCR</AssemblyName>
+    <RootNamespace>journeyofcode.Images.OnenoteOCR</RootNamespace>
+    <AssemblyName>journeyofcode.Images.OnenoteOCR</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

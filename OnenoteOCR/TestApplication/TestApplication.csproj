@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OnenoteOCR\OnenoteOCR.csproj">
-      <Project>{51FE127E-FF4C-445D-80D8-DB4B414953E3}</Project>
-      <Name>OnenoteOCR</Name>
+    <ProjectReference Include="..\journeyofcode.Images.OnenoteOCR\journeyofcode.Images.OnenoteOCR.csproj">
+      <Project>{51fe127e-ff4c-445d-80d8-db4b414953e3}</Project>
+      <Name>journeyofcode.Images.OnenoteOCR</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

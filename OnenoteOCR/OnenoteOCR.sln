@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnenoteOCR", "OnenoteOCR\OnenoteOCR.csproj", "{51FE127E-FF4C-445D-80D8-DB4B414953E3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication", "TestApplication\TestApplication.csproj", "{69467061-7386-4E74-9DAE-74D108DB4943}"
+EndProject
+Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "journeyofcode.Images.OnenoteOCR.nupkg", "journeyofcode.Images.OnenoteOCR.nupkg\journeyofcode.Images.OnenoteOCR.nupkg.nuproj", "{B0287F34-8A06-4C24-A1D7-F4A7D57D6B4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "journeyofcode.Images.OnenoteOCR", "journeyofcode.Images.OnenoteOCR\journeyofcode.Images.OnenoteOCR.csproj", "{51FE127E-FF4C-445D-80D8-DB4B414953E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{51FE127E-FF4C-445D-80D8-DB4B414953E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{51FE127E-FF4C-445D-80D8-DB4B414953E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{51FE127E-FF4C-445D-80D8-DB4B414953E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{51FE127E-FF4C-445D-80D8-DB4B414953E3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{69467061-7386-4E74-9DAE-74D108DB4943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{69467061-7386-4E74-9DAE-74D108DB4943}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69467061-7386-4E74-9DAE-74D108DB4943}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69467061-7386-4E74-9DAE-74D108DB4943}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0287F34-8A06-4C24-A1D7-F4A7D57D6B4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0287F34-8A06-4C24-A1D7-F4A7D57D6B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0287F34-8A06-4C24-A1D7-F4A7D57D6B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0287F34-8A06-4C24-A1D7-F4A7D57D6B4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51FE127E-FF4C-445D-80D8-DB4B414953E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51FE127E-FF4C-445D-80D8-DB4B414953E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51FE127E-FF4C-445D-80D8-DB4B414953E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51FE127E-FF4C-445D-80D8-DB4B414953E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
