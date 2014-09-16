@@ -146,6 +146,31 @@ namespace Tests.journeyofcode.Threading
         }
 
         [Test]
+        public void Supports_Inlining()
+        {
+            bool executed = false;
+            this.ExecuteAndWait(() => this.ExecuteAndWait(() => executed = true));
+
+            Assert.IsTrue(executed);
+        }
+
+        [Test]
+        public void Supports_Inlining_Multiple_Tasks()
+        {
+            int count = 0;
+            var tasks = Enumerable.Range(0, 10).Select(i => this.Execute(() =>
+            {
+                for (int j = 0; j < 10; j++)
+                    this.ExecuteAndWait(() => Interlocked.Increment(ref count));
+
+            })).ToArray();
+
+            Task.WaitAll(tasks);
+
+            Assert.AreEqual(100, count);
+        }
+
+        [Test]
         public void Cannot_Construct_Using_Invalid_Apartement_State()
         {
             Assert.Catch<ArgumentException>(() => new SingleThreadTaskScheduler(ApartmentState.Unknown));

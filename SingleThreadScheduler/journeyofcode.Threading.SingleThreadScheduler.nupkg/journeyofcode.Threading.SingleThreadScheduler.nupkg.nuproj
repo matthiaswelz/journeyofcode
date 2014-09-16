@@ -26,18 +26,16 @@
     <Summary>
     </Summary>
     <Description>Provides the SingleThreadScheduler introduced in http://www.journeyofcode.com/custom-taskscheduler-sta-threads/</Description>
-    <ReleaseNotes>Release Notes</ReleaseNotes>
+    <ReleaseNotes>
+    </ReleaseNotes>
     <ProjectUrl>https://github.com/matthiaswelz/journeyofcode/tree/master/SingleThreadScheduler</ProjectUrl>
     <LicenseUrl>https://raw.githubusercontent.com/matthiaswelz/journeyofcode/master/LICENSE</LicenseUrl>
     <Copyright>Copyright © 2014 Matthias Welz, http://www.journeyofcode.com/</Copyright>
     <Tags>
     </Tags>
-    <RequireLicenseAcceptance>true</RequireLicenseAcceptance>
+    <RequireLicenseAcceptance>false</RequireLicenseAcceptance>
     <EmbedSourceFiles>true</EmbedSourceFiles>
   </PropertyGroup>
-  <ItemGroup>
-    <Content Include="Readme.txt" />
-  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SingleThreadScheduler\SingleThreadScheduler.csproj" />
   </ItemGroup>
