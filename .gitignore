@@ -7,3 +7,7 @@
 /*/*/obj
 #Nuget packages
 /*/packages
+
+#==== ECLIPSE IGNORES ====
+/*/bin
+/*/.settings
