@@ -1,6 +1,6 @@
 package snippet02;
 
-// Writing a named inner class inside a method
+// Writing a local class inside a method
 
 public class Foo {
 	public void doSomething() {
