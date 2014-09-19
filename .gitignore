@@ -11,3 +11,4 @@
 #==== ECLIPSE IGNORES ====
 /*/bin
 /*/.settings
+/.metadata
