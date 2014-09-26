@@ -235,7 +235,7 @@ namespace Tests.journeyofcode.Threading
             taskCompletionSource.SetResult(42);
 
             bool called = false;
-            taskLazy.WhenValueAvailable(result =>
+            taskLazy.WhenValueAvailableAsync(result =>
             {
                 Assert.AreEqual(42, result);
 
@@ -270,7 +270,7 @@ namespace Tests.journeyofcode.Threading
             var taskLazy = new TaskLazy<int>(taskCompletionSource.Task);
 
             bool called = false;
-            var task = taskLazy.WhenValueAvailable(result =>
+            var task = taskLazy.WhenValueAvailableAsync(result =>
             {
                 Assert.AreEqual(42, result);
 

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace journeyofcode.Threading
@@ -143,7 +145,9 @@ namespace journeyofcode.Threading
         /// </remarks>
         public Task WhenValueAvailable(Action<T> action)
         {
-            return this.WhenValueAvailableAsync(action, TaskScheduler.Current);
+            Trace.Assert(SynchronizationContext.Current != null);
+
+            return this.WhenValueAvailableAsync(action, TaskScheduler.FromCurrentSynchronizationContext());
         }
 
         /// <summary>
