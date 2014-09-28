@@ -1,0 +1,13 @@
+﻿<Window x:Class="journeyofcode.AsyncAwaitPitfalls.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:taskTests="clr-namespace:journeyofcode.AsyncAwaitPitfalls"
+        Title="MainWindow" Height="350" Width="525">
+    <ItemsControl ItemsSource="{Binding .}">
+        <ItemsControl.ItemTemplate>
+            <DataTemplate DataType="{x:Type taskTests:Item}">
+                <Button Content="{Binding Path=Name}" Tag="{Binding Path=Action}" Click="ButtonBase_OnClick" />
+            </DataTemplate>
+        </ItemsControl.ItemTemplate>
+    </ItemsControl>
+</Window>
