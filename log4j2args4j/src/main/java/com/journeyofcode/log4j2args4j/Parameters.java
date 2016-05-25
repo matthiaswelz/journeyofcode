@@ -1,4 +1,4 @@
-package args4jlog4j;
+package com.journeyofcode.log4j2args4j;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.core.config.Configurator;

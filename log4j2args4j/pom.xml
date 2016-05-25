@@ -1,9 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.journeyofcode.args4jlog4j</groupId>
-	<artifactId>args4jlog4j</artifactId>
+	<groupId>com.journeyofcode.log4j2args4j</groupId>
+	<artifactId>log4j2args4j</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+	</properties>
 
 	<dependencies>
 		<!-- http://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
@@ -20,4 +25,32 @@
 			<version>2.33</version>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>lib/</classpathPrefix>
+							<mainClass>com.journeyofcode.log4j2args4j.Program</mainClass>
+						</manifest>
+					</archive>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
